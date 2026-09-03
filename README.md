@@ -1,2 +1,14 @@
-# gciIndia
-Official website of GCI India – Computer Education, E-Commerce Training, Digital Marketing and Business Services.
+# GCI India
+
+Official website of GCI India (Global Computer Institute).
+
+Website:
+https://gciindia.com/
+
+Technologies:
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+
+Hosted with GitHub Pages.

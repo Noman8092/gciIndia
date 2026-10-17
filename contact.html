@@ -131,52 +131,95 @@
                 </div>
             </div>
         </section>
-
         <section class="section-alt">
             <div class="container-xl">
-                <div class="row g-4">
-                    <div class="col-lg-5">
-                        <span class="kicker">Business Hours</span>
-                        <h2>When to reach us</h2>
-                        <p class="placeholder-text mb-4">24*7</p>
-                        <div class="d-flex gap-3 flex-wrap">
-                            <a href="tel:8092388155" class="btn btn-primary"><i class="bi bi-telephone"></i> Call Now</a>
-                            <a href="https://wa.me/8092388155" class="btn btn-outline"><i class="bi bi-whatsapp"></i> WhatsApp Us</a>
-                            <a href="mailto:ciindia2085@gmail.com" class="btn btn-outline"><i class="bi bi-envelope"></i> Send Email</a>
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-6">
+                        <span class="kicker">Send an Enquiry</span>
+                        <h2>How can we help you?</h2>
+                        <p>Fill in the details below. When you submit, WhatsApp will open with your message ready to send to GCI India.</p>
+                        <div class="contact-form-card">
+                            <form id="contactForm">
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label">Your name *</label>
+                                    <input class="form-control" id="contactName" name="name" type="text" autocomplete="name" required maxlength="100" placeholder="Enter your full name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactPhone" class="form-label">Your phone number *</label>
+                                    <input class="form-control" id="contactPhone" name="phone" type="tel" autocomplete="tel" required maxlength="20" placeholder="Enter your phone number">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label">Email address (optional)</label>
+                                    <input class="form-control" id="contactEmail" name="email" type="email" autocomplete="email" maxlength="150" placeholder="you@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactSubject" class="form-label">What is your enquiry about? *</label>
+                                    <select class="form-select" id="contactSubject" name="subject" required>
+                    <option value="">Select an option</option>
+                    <option>Computer Courses</option>
+                    <option>O Level / CCC</option>
+                    <option>Web Development</option>
+                    <option>Digital Marketing</option>
+                    <option>Amazon / Flipkart / Meesho Training</option>
+                    <option>Business Services</option>
+                    <option>Other Enquiry</option>
+                  </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactMessage" class="form-label">Your message *</label>
+                                    <textarea class="form-control" id="contactMessage" name="message" rows="4" required maxlength="1500" placeholder="Write your question here"></textarea>
+                                </div>
+                                <button class="btn btn-primary" type="submit"><i class="bi bi-whatsapp me-1" aria-hidden="true"></i> Send Enquiry on WhatsApp</button>
+                                <p class="small mt-3 mb-0" id="formHelp">This form opens WhatsApp with your details. You must press Send in WhatsApp to deliver the message.</p>
+                            </form>
                         </div>
                     </div>
-                    <div class="col-lg-7">
-                        <div class="map-frame">
-                            <iframe src="https://www.google.com/maps?q=India&output=embed" loading="lazy" title="GCI India location map" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <p class="small mt-2 mb-0">Map shown is a placeholder — replace with your exact business location.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section>
-            <div class="container-xl">
-                <div class="section-head">
-                    <span class="kicker">FAQ</span>
-                    <h2>Contact FAQs</h2>
-                </div>
-                <div class="accordion" id="contactFaq">
-                    <div class="accordion-item">
-                        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq1">How can I enquire about a course?</button></h3>
-                        <div id="cfaq1" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
-                            <div class="accordion-body">Call, WhatsApp or email us using the details above, and let us know which course or service you're interested in.</div>
+                    <section class="section-alt">
+                        <div class="container-xl">
+                            <div class="row g-4">
+                                <div class="col-lg-5">
+                                    <span class="kicker">Business Hours</span>
+                                    <h2>When to reach us</h2>
+                                    <p class="placeholder-text mb-4">24*7</p>
+                                    <div class="d-flex gap-3 flex-wrap">
+                                        <a href="tel:8092388155" class="btn btn-primary"><i class="bi bi-telephone"></i> Call Now</a>
+                                        <a href="https://wa.me/8092388155" class="btn btn-outline"><i class="bi bi-whatsapp"></i> WhatsApp Us</a>
+                                        <a href="mailto:ciindia2085@gmail.com" class="btn btn-outline"><i class="bi bi-envelope"></i> Send Email</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="map-frame">
+                                        <iframe src="https://www.google.com/maps?q=India&output=embed" loading="lazy" title="GCI India location map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <p class="small mt-2 mb-0">Map shown is a placeholder — replace with your exact business location.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq2">Where is GCI India located?</button></h3>
-                        <div id="cfaq2" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
-                            <div class="accordion-body">Our address is listed above. Contact us for exact directions.</div>
+                    </section>
+
+                    <section>
+                        <div class="container-xl">
+                            <div class="section-head">
+                                <span class="kicker">FAQ</span>
+                                <h2>Contact FAQs</h2>
+                            </div>
+                            <div class="accordion" id="contactFaq">
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq1">How can I enquire about a course?</button></h3>
+                                    <div id="cfaq1" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                                        <div class="accordion-body">Call, WhatsApp or email us using the details above, and let us know which course or service you're interested in.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cfaq2">Where is GCI India located?</button></h3>
+                                    <div id="cfaq2" class="accordion-collapse collapse" data-bs-parent="#contactFaq">
+                                        <div class="accordion-body">Our address is listed above. Contact us for exact directions.</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </section>
 
     </main>
 

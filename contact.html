@@ -277,6 +277,34 @@
     <button id="scrollTopBtn" aria-label="Scroll to top"><i class="bi bi-arrow-up"></i></button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("contactName").value.trim();
+            const phone = document.getElementById("contactPhone").value.trim();
+            const email = document.getElementById("contactEmail").value.trim();
+            const subject = document.getElementById("contactSubject").value;
+            const message = document.getElementById("contactMessage").value.trim();
+
+            if (!name || !phone || !subject || !message) {
+                alert("Please complete all required fields.");
+                return;
+            }
+
+            const text = [
+                "New enquiry for GCI India",
+                "Name: " + name,
+                "Phone: " + phone,
+                email ? "Email: " + email : "",
+                "Enquiry about: " + subject,
+                "Message: " + message
+            ].filter(Boolean).join("\n");
+
+            const whatsappUrl = "https://wa.me/918092388155?text=" + encodeURIComponent(text);
+            window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+        });
+    </script>
 </body>
 
 </html>
